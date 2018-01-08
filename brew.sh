@@ -31,18 +31,15 @@ if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   chsh -s /usr/local/bin/bash;
 fi;
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
-
-# Install GnuPG to enable PGP-signing commits.
-brew install gnupg
-
 # Install more recent versions of some macOS tools.
 brew install vim --with-override-system-vi
 brew install grep
 brew install openssh
 brew install screen
 brew install homebrew/php/php56 --with-gmp
+
+# Install some development tools
+brew install nvm
 
 # Remove outdated versions from the cellar.
 brew cleanup
