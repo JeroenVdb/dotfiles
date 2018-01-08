@@ -2,7 +2,7 @@
 
 ## Install
 
-### Get dotfiles
+### Get dotfiles (https://github.com/jeroenvdb/dotfiles)
 
 ```bash
 # create default projects dir
@@ -12,7 +12,24 @@ mkdir -p ~/Projects/dotfiles
 cd ~/Projects/dotfiles && curl -L https://github.com/jeroenvdb/dotfiles/tarball/master | tar -xzv --strip-components 1
 ```
 
+### Install brew package manager (https://brew.sh/)
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 ### Setup shell
+
+```bash
+# install Zsh and use it as the default $SHELL
+brew install zsh
+
+# add zsh to the authorized shells list
+echo "$(which zsh)" | sudo tee -a /etc/shells
+
+# switch default shell tot zsh
+sudo chsh -s $(which zsh)
+```
 
 #### Use ZSH + oh-my-zsh + Hyper
 
