@@ -29,6 +29,9 @@ echo "$(which zsh)" | sudo tee -a /etc/shells
 
 # switch default shell tot zsh
 sudo chsh -s $(which zsh)
+
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 #### Use ZSH + oh-my-zsh + Hyper
