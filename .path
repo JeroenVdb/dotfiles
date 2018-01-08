@@ -1,0 +1,6 @@
+# Specify the $PATH
+# If ~/.path exists, it will be sourced along with the other files, before any feature testing (such as detecting which version of ls is being used) takes place.
+#
+# Here’s an example ~/.path file that adds /usr/local/bin to the $PATH:
+#
+# export PATH="/usr/local/bin:$PATH"
