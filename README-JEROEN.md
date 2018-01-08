@@ -12,6 +12,14 @@ mkdir -p ~/Projects/dotfiles
 cd ~/Projects/dotfiles && curl -L https://github.com/jeroenvdb/dotfiles/tarball/master | tar -xzv --strip-components 1
 ```
 
+### Get dotfiles in place
+
+```bash
+cd ~/Projects/dotfiles && bash bootstrap.sh;
+
+# restart the shell
+```
+
 ### Install brew package manager (https://brew.sh/)
 
 ```bash
@@ -34,22 +42,12 @@ sudo chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-#### Use ZSH + oh-my-zsh + Hyper
-
-...
-
-### Get dotfiles in place
-
-```bash
-bash bootstrap.sh
-```
-
 ### Sensible macOS defaults
 
 When setting up a new Mac, you may want to set some sensible macOS defaults:
 
 ```bash
-./.macos
+~/.macos
 ```
 
 # Thanks to...
