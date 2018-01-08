@@ -9,7 +9,7 @@
 mkdir -p ~/Projects/dotfiles
 
 # download dotfiles and extract (or use git clone)
-curl -L https://github.com/jeroenvdb/dotfiles/tarball/master | tar -xzv --strip-components 1
+cd ~/Projects/dotfiles && curl -L https://github.com/jeroenvdb/dotfiles/tarball/master | tar -xzv --strip-components 1
 ```
 
 ### Setup shell
