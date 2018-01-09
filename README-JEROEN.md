@@ -1,9 +1,9 @@
-# JeroenVdb Macos and dotfiles setup
+# JeroenVdb MacOS (dotfiles) setup
 
 ## dotfiles
 
-Dotfiles are often used by applications to store configurations. Because we want the same configuration across devices we store them in this repository. These dotfiles will be use by applications we install later.
-Download the files and run `bootstrap.sh` to `rsync` them to your home folder. When changing configurations in the dotfiles folder you should re-run `bootstrap.sh` re resync them.
+Dotfiles are often used by applications to store configurations. Because we want the same configuration across devices we store them in this repository. These dotfiles will be used by applications we install later.
+Download the files and run `bootstrap.sh` to `rsync` them to your home folder. When changing configurations in the dotfiles folder you should re-run `bootstrap.sh` to resync them.
 
 - `.aliases` handy shorthands for commands
 - `.exports` system variables used by applications
@@ -22,15 +22,17 @@ cd "~/Projects/dotfiles" && bash bootstrap.sh;
 # restart your shell
 ```
 
-## Install brew package manager (https://brew.sh/)
+## Install Homebrew package manager (https://brew.sh/)
 
-Brew is a software package manager we use to install software.
+Homebrew is a software package manager we use to install (small) packages. We also tap caskroom (https://caskroom.github.io) so we can install binaries via `brew`.
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew tap caskroom/cask
 ```
 
-## Set(up) Zsh(ell)
+## Use Zsh instead of Bash
 
 ```bash
 # install Zsh and use it as the default $SHELL
