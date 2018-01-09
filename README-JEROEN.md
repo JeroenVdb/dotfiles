@@ -5,6 +5,11 @@
 Dotfiles are often used by applications to store configurations. Because we want the same configuration across devices we store them in this repository. These dotfiles will be use by applications we install later.
 Download the files and run `bootstrap.sh` to `rsync` them to your home folder. When changing configurations in the dotfiles folder you should re-run `bootstrap.sh` re resync them.
 
+- `.aliases` handy shorthands for commands
+- `.exports` system variables used by applications
+- `.gitconfig` and `.gitignore` basic git configuration files
+- `.macos` and `.osx` configuration files for MacOS and OSX
+
 ```bash
 # download dotfiles and extract (or use git clone)
 
@@ -43,7 +48,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ## Sensible macOS defaults
 
-When setting up a new Mac, you may want to set some sensible macOS defaults:
+When setting up a new Mac, you may want to set some sensible macOS defaults.
 
 ```bash
 ~/.macos
@@ -52,3 +57,5 @@ When setting up a new Mac, you may want to set some sensible macOS defaults:
 # Thanks to...
 
 All my thanks to mathiasbynens for the forked dotfiles repository: https://github.com/mathiasbynens/dotfiles
+
+Note to self: don't remove lines so we can compare/sync with upstream repo.
