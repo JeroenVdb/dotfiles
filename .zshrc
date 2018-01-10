@@ -1,3 +1,6 @@
+# Brew: To activate antigen, add the following to your ~/.zshrc:
+source /usr/local/share/antigen/antigen.zsh
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
