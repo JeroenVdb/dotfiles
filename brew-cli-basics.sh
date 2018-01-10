@@ -26,8 +26,5 @@ brew install openssh
 brew install screen
 brew install homebrew/php/php56 --with-gmp
 
-# Install some development tools
-brew install nvm
-
 # Remove outdated versions from the cellar.
 brew cleanup
