@@ -1,14 +1,24 @@
 # JeroenVdb MacOS (dotfiles) setup
 
-## dotfiles
-
 Dotfiles are often used by applications to store configurations. Because we want the same configuration across devices we store them in this repository. These dotfiles will be used by applications we install later.
 Download the files and run `bootstrap.sh` to `rsync` them to your home folder. When changing configurations in the dotfiles folder you should re-run `bootstrap.sh` to resync them.
 
-- `.aliases` handy shorthands for commands
+## Structure
+
+- `.aliases` and `.functions` handy shorthands for common commands, used by the shells (bash and Zsh)
 - `.exports` system variables used by applications
 - `.gitconfig` and `.gitignore` basic git configuration files
 - `.macos` and `.osx` configuration files for MacOS and OSX
+
+- `.zshrc` is loaded "sourced" every time a Zsh shell opens, contains Zsh specific config
+- `.bash_profile` is loaded "sourced" every time a Bash shell opens from a local computer, it contains our global shell config for both Zsh and Bash
+- `.bashrc` is loaded "sourced" when you connect to the system via ssh (we ignore this pretty much and just load the main `.bash_profile` file)
+
+- `brew-cli-basic.sh` installs small handy cli packages
+- `brew-development.sh` installs development related applications
+- `brew-software.sh` installs general applications
+
+## dotfiles
 
 ```bash
 # download dotfiles and extract (or use git clone)
@@ -35,16 +45,16 @@ brew tap caskroom/cask
 ## Use Zsh instead of Bash
 
 ```bash
-# install zsh
-brew install zsh
+# install Zsh
+brew install Zsh
 
-# install zsh package manager
+# install Zsh package manager
 brew install antigen
 
-# add zsh to the authorized shells list
+# add Zsh to the authorized shells list
 echo "$(which zsh)" | sudo tee -a /etc/shells
 
-# switch default shell tot zsh
+# switch default shell tot Zsh
 sudo chsh -s $(which zsh)
 ```
 

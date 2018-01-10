@@ -18,5 +18,5 @@ antigen theme robbyrussell
 # Tell Antigen that you're done.
 antigen apply
 
-# Load default dotfiles
+# Load default shell dotfiles
 source ~/.bash_profile
