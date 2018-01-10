@@ -7,5 +7,9 @@ done
 unset file
 
 if [[ -n "$ZSH_VERSION" ]]; then  # quit now if in zsh
-    return 1 2> /dev/null || exit 1;
+    return 0 2> /dev/null || exit 0;
 fi;
+
+# specific Bash stuff
+
+echo "If you see this message when in Zsh, something is wrong with the Zsh check. Jeroen"
