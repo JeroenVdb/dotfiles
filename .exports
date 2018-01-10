@@ -34,4 +34,4 @@ export MANPAGER='less -X';
 export GPG_TTY=$(tty);
 
 # Install brew applications in the Users Applications folder
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
