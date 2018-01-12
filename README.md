@@ -66,6 +66,11 @@ When setting up a new Mac, you may want to set some sensible macOS defaults.
 ~/.macos
 ```
 
+# Backup
+
+- Atom: make sure to have the latest package.cson `Package Sync: Create package list`
+- Move all dotfiles back to the git dotfiles repo and commit & push
+
 # Thanks to...
 
 All my thanks to mathiasbynens for the forked dotfiles repository: https://github.com/mathiasbynens/dotfiles
