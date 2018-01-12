@@ -9,11 +9,13 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias p="cd ~/Projects"
 alias g="git"
+
+# Edit hosts file
+alias hosts="sudo $EDITOR /etc/hosts" # https://github.com/paulirish/dotfiles/commit/e27e34b858411af14e3993a028430636dc88ca5f
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
