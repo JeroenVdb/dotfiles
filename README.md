@@ -71,7 +71,8 @@ When setting up a new Mac, you may want to set some sensible macOS defaults.
 # Backup
 
 - Atom: make sure to have the latest package.cson `Package Sync: Create package list`
-- Move all dotfiles back to the git dotfiles repo and commit & push
+- Have you updated any files in your $HOME folder? Copy them back to the git dotfiles repo and commit & push
+- Update the `brew-*.sh` files: remove and add packages to keep this up-to-date. You can use `brew list` and `brew cask list`
 
 # Thanks to...
 
