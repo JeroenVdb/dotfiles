@@ -74,8 +74,10 @@ When setting up a new Mac, you may want to set some sensible macOS defaults.
 - Have you updated any files in your $HOME folder? Copy them back to the git dotfiles repo and commit & push
 - Update the `brew-*.sh` files: remove and add packages to keep this up-to-date. You can use `brew list` and `brew cask list`
 
-# Thanks to...
+# Thanks to
 
-All my thanks to mathiasbynens for the forked dotfiles repository: https://github.com/mathiasbynens/dotfiles
-
-Note to self: don't remove lines so we can compare/sync with upstream repo.
+All my thanks to [Mathias Bynens](https://mathiasbynens.be/) from which I originally forked the repository.
+And other dotfiles:
+- https://github.com/paulirish/dotfiles/
+- https://github.com/paulmillr/dotfiles/
+- https://github.com/alrra/dotfiles/
