@@ -26,10 +26,10 @@ Download the files and run `bootstrap.sh` to `rsync` them to your home folder. W
 mkdir -p "~/Projects/dotfiles" && cd "$_" && curl -L https://github.com/jeroenvdb/dotfiles/tarball/master | tar -xzv --strip-components 1
 
 # rsync dotfiles to your home directory
-cd ~/Projects/dotfiles && bootstrap.sh;
+cd ~/Projects/dotfiles && bootstrap-dotfiles.sh;
 
 # create symlinks for some files (is this easier to maintain then rsync?)
-cd ~/Projects/dotfiles && bootstrap-ln.sh;
+cd ~/Projects/dotfiles && bootstrap-dotfiles-ln.sh;
 
 # restart your shell
 ```
