@@ -14,9 +14,9 @@ Download the files and run `bootstrap.sh` to `rsync` them to your home folder. W
 - `.bash_profile` is loaded "sourced" every time a Bash shell opens from a local computer, it contains our global shell config for both Zsh and Bash
 - `.bashrc` is loaded "sourced" when you connect to the system via ssh (we ignore this pretty much and just load the main `.bash_profile` file)
 
-- `brew-cli-basic.sh` installs small handy cli packages
-- `brew-development.sh` installs development related applications
-- `brew-software.sh` installs general applications
+- `brew-basic.sh` installs the most basic packages and applications we need everywhere
+- `brew-development.sh` installs development related applications (check if you need it all)
+- `brew-software.sh` installs general applications (check if you need it all)
 
 ## dotfiles
 
