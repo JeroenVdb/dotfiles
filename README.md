@@ -1,7 +1,9 @@
 # JeroenVdb MacOS (dotfiles) setup
 
 Dotfiles are often used by applications to store configurations. Because we want the same configuration across devices we store them in this repository. These dotfiles will be used by applications we install later.
-Download the files and run `bootstrap.sh` to `rsync` them to your home folder. When changing configurations in the dotfiles folder you should re-run `bootstrap.sh` to resync them.
+Download the files and run `bootstrap-dotfiles-ln.sh` to `symlink` the files to your home folder.
+
+Learn more about doffiles here: https://dotfiles.github.io/
 
 ## Structure
 
@@ -25,10 +27,7 @@ Download the files and run `bootstrap.sh` to `rsync` them to your home folder. W
 
 mkdir -p "~/Projects/dotfiles" && cd "$_" && curl -L https://github.com/jeroenvdb/dotfiles/tarball/master | tar -xzv --strip-components 1
 
-# rsync dotfiles to your home directory
-cd ~/Projects/dotfiles && bootstrap-dotfiles.sh;
-
-# create symlinks for some files (is this easier to maintain then rsync?)
+# symlink dotfiles to your home directory
 cd ~/Projects/dotfiles && bootstrap-dotfiles-ln.sh;
 
 # restart your shell
@@ -76,8 +75,4 @@ When setting up a new Mac, you may want to set some sensible macOS defaults.
 
 # Thanks to
 
-All my thanks to [Mathias Bynens](https://mathiasbynens.be/) from which I originally forked the repository.
-And other dotfiles:
-- https://github.com/paulirish/dotfiles/
-- https://github.com/paulmillr/dotfiles/
-- https://github.com/alrra/dotfiles/
+All my thanks to [Mathias Bynens](https://mathiasbynens.be/) from which I originally forked the repository and all people who share there [dotfiles](https://dotfiles.github.io/).
