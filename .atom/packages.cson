@@ -1,6 +1,4 @@
 packages: [
-  "atom-cform-yaml"
-  "atom-jade"
   "atom-material-syntax"
   "auto-indent"
   "busy-signal"
@@ -10,7 +8,6 @@ packages: [
   "goto-definition"
   "hyperclick"
   "intentions"
-  "language-groovy"
   "language-marko"
   "linter"
   "linter-eslint"
@@ -20,6 +17,4 @@ packages: [
   "open-on-bitbucket"
   "package-sync"
   "pigments"
-  "raml"
-  "sync-settings"
 ]

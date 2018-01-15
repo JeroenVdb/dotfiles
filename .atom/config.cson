@@ -28,8 +28,7 @@
     disableWhenNoEslintrcFileInPath: true
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
-  "linter-ui-default":
-    panelHeight: 210
+  "linter-ui-default": {}
   "markdown-preview":
     breakOnSingleNewline: true
   minimap:
@@ -39,11 +38,6 @@
   "package-sync":
     createOnChange: true
     forceOverwrite: true
-  "sync-settings":
-    _analyticsUserId: "b22a3c30-2919-4c1d-bde7-5c28dc639091"
-    _lastBackupHash: "0a6649d05e96182986371356077f8b8c075768b3"
-    gistId: "34db3654cf0e507044cf"
-    personalAccessToken: "086f2a70e308380223d2cd0d5e61b0d48d395f0e"
   "tree-view":
     hideVcsIgnoredFiles: true
   welcome:
