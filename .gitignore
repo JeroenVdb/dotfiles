@@ -22,3 +22,6 @@ Thumbs.db
 .atom/packages
 .atom/storage
 .atom/.DS_Store
+node_modules
+Gmail-darwin-x64
+Google Calendar-darwin-x64
