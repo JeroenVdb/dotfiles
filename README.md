@@ -1,8 +1,8 @@
 # JeroenVdb MacOS (dotfiles) setup
 
-Dotfiles are often used by applications to store configurations. Because we want the same configuration across devices we store them in this repository. These dotfiles will be used by applications we install later.
-Download the files and run `bootstrap-dotfiles-ln.sh` to `symlink` the files to your home folder.
+This repo contains my current laptop (Macbook, MacOS) setup. It contains dotfiles and scripts to get everything in place.
 
+Dotfiles are often used by applications to store configurations. These dotfiles will be used by applications we install later.
 Learn more about doffiles here: https://dotfiles.github.io/
 
 ## Structure
@@ -20,6 +20,8 @@ Learn more about doffiles here: https://dotfiles.github.io/
 - `brew-development.sh` installs development related applications (check if you need it all)
 - `brew-software.sh` installs general applications (check if you need it all)
 
+- `nativefier/` run web applications in electron shells so they act as standalone desktop applications
+
 ## dotfiles
 
 ```bash
@@ -35,7 +37,7 @@ cd ~/Projects/dotfiles && bootstrap-dotfiles-ln.sh;
 
 ## Install Homebrew package manager (https://brew.sh/)
 
-Homebrew is a source code package manager we use to install packages. We also tap `caskroom` (https://caskroom.github.io) so we can install full binaries via `brew cask <name>`.
+Homebrew is a source code package manager we use to install packages. We also tap `caskroom` (https://caskroom.github.io) so we can install full binaries (Spotify, Google Chrome, etc...) via `brew cask <name>`.
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
