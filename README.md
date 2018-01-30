@@ -12,7 +12,7 @@ Learn more about doffiles here: https://dotfiles.github.io/
 - `.gitconfig` and `.gitignore` basic git configuration files
 - `.macos` and `.osx` configuration files for MacOS and OSX
 
-- `.zshrc` is loaded "sourced" every time a Zsh shell opens, contains Zsh specific config
+- `.zshrc` is loaded "sourced" every time a Zsh shell opens, contains Zsh specific config and afterwards loads `.bash_profile
 - `.bash_profile` is loaded "sourced" every time a Bash shell opens from a local computer, it contains our global shell config for both Zsh and Bash
 - `.bashrc` is loaded "sourced" when you connect to the system via ssh (we ignore this pretty much and just load the main `.bash_profile` file)
 
