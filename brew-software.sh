@@ -9,6 +9,7 @@ brew cask install spotify
 # other
 brew cask install 1password
 brew cask install google-backup-and-sync # for non-G Suite accounts
+brew cask install the-unarchiver
 
 # @HOME
 brew cask install plex-media-server
