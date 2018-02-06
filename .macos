@@ -149,6 +149,9 @@ sudo chflags uchg /private/var/vm/sleepimage
 # Mouse: set fast tracking speed
 defaults write -g com.apple.mouse.scaling 3
 
+# Trackpad: set fast tracking speed
+defaults write -g com.apple.trackpad.scaling 3
+
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
