@@ -27,7 +27,7 @@ Learn more about doffiles here: https://dotfiles.github.io/
 ```bash
 # download dotfiles and extract (or use git clone)
 
-mkdir -p "~/Projects/dotfiles" && cd "$_" && curl -L https://github.com/jeroenvdb/dotfiles/tarball/master | tar -xzv --strip-components 1
+mkdir -p ~/Projects/dotfiles && cd "$_" && curl -L https://github.com/jeroenvdb/dotfiles/tarball/master | tar -xzv --strip-components 1
 
 # symlink dotfiles to your home directory
 cd ~/Projects/dotfiles && bootstrap-dotfiles-ln.sh;
