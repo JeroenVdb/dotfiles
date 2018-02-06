@@ -58,7 +58,7 @@ brew install antigen
 echo "$(which zsh)" | sudo tee -a /etc/shells
 
 # switch default shell tot Zsh
-sudo chsh -s $(which zsh)
+chsh -s $(which zsh)
 ```
 
 ## Sensible macOS defaults
