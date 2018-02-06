@@ -69,6 +69,10 @@ When setting up a new Mac, you may want to set some sensible macOS defaults.
 ~/.macos
 ```
 
+## Atom
+
+Install `package-sync` (`apm install package-sync`) and use the `Package Sync: Sync` command from the Command Palette to download all packages.
+
 # Backup
 
 - Atom: make sure to have the latest package.cson `Package Sync: Create package list`
