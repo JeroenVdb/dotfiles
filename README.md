@@ -73,6 +73,20 @@ When setting up a new Mac, you may want to set some sensible macOS defaults.
 
 Install `package-sync` (`apm install package-sync`) and use the `Package Sync: Sync` command from the Command Palette to download all packages.
 
+## iTerm2
+
+Install iTerm 2 (`brew cask install iterm2`) and run the following commands to use the perferences included in this repository.
+
+```
+# Specify the preferences directory
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Projects/dotfiles/iterm2_preferences"
+# Tell iTerm2 to use the custom preferences in the directory
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+```
+
+Source: http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/
+
 # Backup
 
 - Atom: make sure to have the latest package.cson `Package Sync: Create package list`
