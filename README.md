@@ -43,6 +43,7 @@ Homebrew is a source code package manager we use to install packages. We also ta
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap caskroom/cask
+brew tap caskroom/versions # for specific versions like google-chrome-canary
 ```
 
 ## Use Zsh instead of Bash
