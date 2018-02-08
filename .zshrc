@@ -8,6 +8,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle common-aliases
 antigen bundle command-not-found
+antigen bundle z
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
