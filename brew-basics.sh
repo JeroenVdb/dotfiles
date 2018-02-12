@@ -31,6 +31,9 @@ brew install homebrew/php/php56 --with-gmp
 # Remove outdated versions from the cellar.
 brew cleanup
 
+# Install trash cli to move files and directories to the trash instead of using `rm` -> https://github.com/sindresorhus/trash-cli
+npm install --global trash-cli
+
 #####
 ### Install Restart/Sleep/Logout/Shutdown shortcuts in Spotlight and move them to /Applications
 #####
