@@ -1,8 +1,19 @@
 #!/usr/bin/env bash
 
+####
+# Node
+# install node version manager and use a specific version
+####
+
 brew install nvm
 
-# Use iTerm
-# Docs: http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/
-# Store config files in dotfiles repo + use macos defaults to point to that directory
-# hyper-snazzy -> iterm2-snazzy: https://github.com/sindresorhus/iterm2-snazzy
+nvm install 8
+nvm use 8
+# nvm ls # list local versions
+# nvm ls-remote # list remote available versions
+
+####
+# Java
+####
+
+brew cask install java8
