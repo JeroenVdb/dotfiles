@@ -35,7 +35,7 @@ cd ~/Projects/dotfiles && bootstrap-dotfiles-ln.sh;
 # restart your shell
 ```
 
-## Install Homebrew package manager (https://brew.sh/)
+## Package Manager: Homebrew (https://brew.sh/)
 
 Homebrew is a source code package manager we use to install packages. We also tap `caskroom` (https://caskroom.github.io) so we can install full binaries (Spotify, Google Chrome, etc...) via `brew cask <name>`.
 
@@ -46,7 +46,7 @@ brew tap caskroom/cask
 brew tap caskroom/versions # for specific versions like google-chrome-canary
 ```
 
-## Use Zsh instead of Bash
+## Shell: Use Zsh instead of Bash
 
 ```bash
 # install Zsh
@@ -70,11 +70,11 @@ When setting up a new Mac, you may want to set some sensible macOS defaults.
 ~/.macos
 ```
 
-## Atom
+## Editor/IDE: Atom
 
 Install `package-sync` (`apm install package-sync`) and use the `Package Sync: Sync` command from the Command Palette to download all packages.
 
-## iTerm2
+## Terminal: iTerm2
 
 Install iTerm 2 (`brew cask install iterm2`) and run the following commands to use the perferences included in this repository.
 
