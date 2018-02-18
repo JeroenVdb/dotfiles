@@ -1,9 +1,9 @@
-# JeroenVdb MacOS (dotfiles) setup
+# MacOS (dotfiles) setup
 
-This repo contains my current laptop (Macbook, MacOS) setup. It contains dotfiles and scripts to get everything in place.
+This repo contains my current laptop (Macbook, MacOS) setup. It contains dotfiles, software and scripts to get everything in place and up-and-running.
 
 Dotfiles are often used by applications to store configurations. These dotfiles will be used by applications we install later.
-Learn more about doffiles here: https://dotfiles.github.io/
+Learn more about dotfiles here: https://dotfiles.github.io/
 
 ## Structure
 
@@ -16,23 +16,23 @@ Learn more about doffiles here: https://dotfiles.github.io/
 - `.bash_profile` is loaded "sourced" every time a Bash shell opens from a local computer, it contains our global shell config for both Zsh and Bash
 - `.bashrc` is loaded "sourced" when you connect to the system via ssh (we ignore this pretty much and just load the main `.bash_profile` file)
 
-- `brew-basic.sh` installs the most basic packages and applications we need everywhere
+- `brew-basic.sh` installs the most basic packages and applications we need on every setup
 - `brew-development.sh` installs development related applications (check if you need it all)
 - `brew-software.sh` installs general applications (check if you need it all)
-
-- `nativefier/` run web applications in electron shells so they act as standalone desktop applications
 
 ## dotfiles
 
 ```bash
 # download dotfiles and extract (or use git clone)
-
 mkdir -p ~/Projects/dotfiles && cd "$_" && curl -L https://github.com/jeroenvdb/dotfiles/tarball/master | tar -xzv --strip-components 1
 
 # symlink dotfiles to your home directory
 cd ~/Projects/dotfiles && bootstrap-dotfiles-ln.sh;
 
 # restart your shell
+
+# check all active symlinks in your $HOME directory
+find ~ -maxdepth 1 -type l -ls
 ```
 
 ## Package Manager: Homebrew (https://brew.sh/)
@@ -42,7 +42,7 @@ Homebrew is a source code package manager we use to install packages. We also ta
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew tap caskroom/cask
+brew tap caskroom/cask # for full binaries
 brew tap caskroom/versions # for specific versions like google-chrome-canary
 ```
 
@@ -58,7 +58,7 @@ brew install antigen
 # add Zsh to the authorized shells list
 echo "$(which zsh)" | sudo tee -a /etc/shells
 
-# switch default shell tot Zsh
+# switch this users default shell tot Zsh (don't sudo, this wil try to change the root shell)
 chsh -s $(which zsh)
 ```
 
@@ -76,9 +76,12 @@ Install `package-sync` (`apm install package-sync`) and use the `Package Sync: S
 
 ## Terminal: iTerm2
 
-Install iTerm 2 (`brew cask install iterm2`) and run the following commands to use the perferences included in this repository.
+Install iTerm 2 and run the following commands to use the perferences included in this repository.
 
 ```
+# install iterm2
+brew cask install iterm2
+
 # Specify the preferences directory
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Projects/dotfiles/iterm2_preferences"
 # Tell iTerm2 to use the custom preferences in the directory
@@ -87,6 +90,11 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 ```
 
 Source: http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/
+
+# Other specific setup documentation
+
+- [Web Desktop Applications with nativefier](nativefier/nativefier.md): run web applications in electron shells so they act as standalone desktop applications
+- [Mediacenter setup](mediacenter.md)
 
 # Backup
 
