@@ -28,11 +28,18 @@ brew install openssh
 brew install screen
 brew install homebrew/php/php56 --with-gmp
 
+brew install wget
+
 # Remove outdated versions from the cellar.
 brew cleanup
 
 # Install trash cli to move files and directories to the trash instead of using `rm` -> https://github.com/sindresorhus/trash-cli
 npm install --global trash-cli
+
+# Upgrade default python to python3
+brew upgrade python
+# From Homebrew:
+# If you need Homebrew's Python 2, `brew install python@2`.
 
 #####
 ### Install Restart/Sleep/Logout/Shutdown shortcuts in Spotlight and move them to /Applications

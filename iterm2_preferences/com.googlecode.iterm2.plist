@@ -62,7 +62,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>269 183 1016 512 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>194 327 1505 850 0 0 1920 1177 </string>
+	<string>24 203 1651 850 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>247 107 1505 850 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -664,7 +664,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>58739735-E8F4-45D8-8565-41F23E3E8DBD</string>
 	<key>NoSyncLastTipTime</key>
-	<real>540493484.00489295</real>
+	<real>541034514.52376294</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -682,6 +682,10 @@
 		<string>0003</string>
 		<string>0004</string>
 		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
 	</array>
 	<key>PointerActions</key>
 	<dict>
@@ -727,7 +731,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-16T08:28:28Z</date>
+	<date>2018-02-21T15:53:55Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -738,7 +742,10 @@
 	<true/>
 	<key>ToolbeltTools</key>
 	<array>
-		<string>Profiles</string>
+		<string>Paste History</string>
+		<string>Jobs</string>
+		<string>Notes</string>
+		<string>Command History</string>
 	</array>
 	<key>UseBorder</key>
 	<false/>

@@ -25,3 +25,7 @@ Thumbs.db
 node_modules
 Gmail-darwin-x64
 Google Calendar-darwin-x64
+
+/bin
+site/bin
+.project
