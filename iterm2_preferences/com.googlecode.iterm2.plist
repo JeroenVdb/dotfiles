@@ -10,11 +10,15 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>BracketedPasteMode</key>
+	<true/>
 	<key>Default Arrangement Name</key>
 	<string>Simple start</string>
 	<key>Default Bookmark Guid</key>
 	<string>91FDDE5F-FB78-46F3-B049-0BCB0F07FCA5</string>
 	<key>EnableProxyIcon</key>
+	<false/>
+	<key>EscapeShellCharsWithBackslash</key>
 	<false/>
 	<key>HideScrollbar</key>
 	<false/>
@@ -62,7 +66,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>269 183 1016 512 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>24 203 1651 850 0 0 1920 1177 </string>
+	<string>100 241 1505 850 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>247 107 1505 850 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -664,7 +668,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>58739735-E8F4-45D8-8565-41F23E3E8DBD</string>
 	<key>NoSyncLastTipTime</key>
-	<real>541034514.52376294</real>
+	<real>541932344.84627497</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -686,7 +690,20 @@
 		<string>0007</string>
 		<string>0008</string>
 		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
 	</array>
+	<key>PasteSpecialChunkDelay</key>
+	<real>0.01</real>
+	<key>PasteSpecialChunkSize</key>
+	<integer>1024</integer>
+	<key>PasteSpecialRegex</key>
+	<string></string>
+	<key>PasteSpecialSubstitution</key>
+	<string></string>
+	<key>PasteSpecialUseRegexSubstitution</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -731,7 +748,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-21T15:53:55Z</date>
+	<date>2018-03-01T08:29:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>

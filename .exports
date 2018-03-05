@@ -35,3 +35,8 @@ export GPG_TTY=$(tty);
 
 # Install brew applications in the Users Applications folder
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+# Onelogin: https://github.com/physera/onelogin-aws-cli
+export AWS_PROFILE=onelogin
+export AWS_DEFAULT_REGION=eu-west-1
+alias onelogin='onelogin-aws-login --profile onelogin'

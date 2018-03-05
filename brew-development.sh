@@ -17,3 +17,14 @@ nvm use 8
 ####
 
 brew cask install java8
+
+# Python
+# Upgrade default python to python3
+brew upgrade python
+# From Homebrew:
+# If you need Homebrew's Python 2, `brew install python@2`.
+
+# aws cli
+# official documentation says: `pip install awscli --upgrade --user`
+# but also possible via brew
+brew install awscli
