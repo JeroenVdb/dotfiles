@@ -66,7 +66,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>269 183 1016 512 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>100 241 1505 850 0 0 1920 1177 </string>
+	<string>0 207 1505 850 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>247 107 1505 850 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -668,7 +668,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>58739735-E8F4-45D8-8565-41F23E3E8DBD</string>
 	<key>NoSyncLastTipTime</key>
-	<real>541932344.84627497</real>
+	<real>543401837.28248799</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -693,6 +693,16 @@
 		<string>0010</string>
 		<string>0011</string>
 		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
 	</array>
 	<key>PasteSpecialChunkDelay</key>
 	<real>0.01</real>
@@ -748,7 +758,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-01T08:29:05Z</date>
+	<date>2018-03-21T11:07:14Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -757,6 +767,8 @@
 	<true/>
 	<key>StretchTabsToFillBar</key>
 	<true/>
+	<key>TimeBetweenTips</key>
+	<real>86400</real>
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Paste History</string>

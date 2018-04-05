@@ -17,6 +17,7 @@ nvm use 8
 ####
 
 brew cask install java8
+brew install maven
 
 # Python
 # Upgrade default python to python3

@@ -18,4 +18,5 @@ brew cask install transmission
 
 # @WORK
 brew cask install hipchat
-brew cask install postman
+# brew cask install postman
+brew cask install insomnia
