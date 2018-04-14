@@ -5,6 +5,7 @@ echo "Create symlinks: start"
 ln -s -v ~/Projects/dotfiles/.aliases ~/.aliases
 ln -s -v ~/Projects/dotfiles/.atom/ ~/.atom
 ln -s -v ~/Projects/dotfiles/.vscode/ ~/.vscode
+ln -s -v ~/Projects/dotfiles/VSCodeUser ~/Library/Application\ Support/Code/User
 ln -s -v ~/Projects/dotfiles/.bash_profile ~/.bash_profile
 ln -s -v ~/Projects/dotfiles/.bashrc ~/.bashrc
 ln -s -v ~/Projects/dotfiles/.exports ~/.exports
