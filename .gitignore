@@ -32,3 +32,6 @@ Google Calendar-darwin-x64
 .classpath
 .project
 bin/*
+
+
+workspaceStorage/*
