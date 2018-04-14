@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+# make sure I still know what this script will do
+read -p "This script will remove already existing dotfiles and config directories before symlinking them to this repositories directories and files, are you OK with this? " -n 1 -r
+echo # newline
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+	# do dangerous stuff, no exit
+	echo "Hope you know what you are doing ;-)"
+else
+	echo "Exiting..."
+	exit 1
+fi
+
 echo "Create symlinks: start"
 
 rm -rf ~/.aliases
