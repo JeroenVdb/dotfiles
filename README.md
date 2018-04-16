@@ -7,6 +7,8 @@ Learn more about dotfiles here: https://dotfiles.github.io/
 
 ## Structure
 
+All config files and directories are located in the `configs` folder.
+
 - `.aliases` and `.functions` handy shorthands for common commands, used by the shells (bash and Zsh)
 - `.exports` system variables used by applications
 - `.gitconfig` and `.gitignore` basic git configuration files
@@ -15,7 +17,13 @@ Learn more about dotfiles here: https://dotfiles.github.io/
 - `.zshrc` is loaded "sourced" every time a Zsh shell opens, contains Zsh specific config and afterwards loads `.bash_profile`
 - `.bash_profile` is loaded "sourced" every time a Bash shell opens from a local computer, it contains our global shell config for both Zsh and Bash
 - `.bashrc` is loaded "sourced" when you connect to the system via ssh (we ignore this pretty much and just load the main `.bash_profile` file)
+- `iterm2_preferences` iTerm2 preferences, check Terminal section to link and load the correct settings
+- `.vscode` VS Code extensions
+- `VSCodeUser` VS Code user specific preferences (keybindings, settings, snippets, extension settings)
 
+Some automated scripts and documentation
+
+- `bootstrap-dotfiles-ln.sh` symlink dotfiles and configs to the files in this repository
 - `brew-basic.sh` installs the most basic packages and applications we need on every setup
 - `brew-development.sh` installs development related applications (check if you need it all)
 - `brew-software.sh` installs general applications (check if you need it all)
@@ -83,7 +91,7 @@ Install iTerm 2 and run the following commands to use the perferences included i
 brew cask install iterm2
 
 # Specify the preferences directory
-defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Projects/dotfiles/iterm2_preferences"
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/Projects/dotfiles/configs/iterm2_preferences"
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 

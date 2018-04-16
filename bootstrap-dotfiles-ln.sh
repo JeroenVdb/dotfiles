@@ -14,52 +14,52 @@ fi
 echo "Create symlinks: start"
 
 rm -rf ~/.aliases
-ln -s -v ~/Projects/dotfiles/.aliases ~/.aliases
+ln -s -v ~/Projects/dotfiles/configs/.aliases ~/.aliases
 
 rm -rf ~/.atom
-ln -s -v ~/Projects/dotfiles/.atom/ ~/.atom
+ln -s -v ~/Projects/dotfiles/configs/.atom/ ~/.atom
 
 rm -rf ~/.vscode
-ln -s -v ~/Projects/dotfiles/.vscode/ ~/.vscode
+ln -s -v ~/Projects/dotfiles/configs/.vscode/ ~/.vscode
 
 rm -rf ~/Library/Application\ Support/Code/User
-ln -s -v ~/Projects/dotfiles/VSCodeUser ~/Library/Application\ Support/Code/User
+ln -s -v ~/Projects/dotfiles/configs/VSCodeUser ~/Library/Application\ Support/Code/User
 
 rm -rf ~/.bash_profile
-ln -s -v ~/Projects/dotfiles/.bash_profile ~/.bash_profile
+ln -s -v ~/Projects/dotfiles/configs/.bash_profile ~/.bash_profile
 
 rm -rf ~/.bashrc
-ln -s -v ~/Projects/dotfiles/.bashrc ~/.bashrc
+ln -s -v ~/Projects/dotfiles/configs/.bashrc ~/.bashrc
 
 rm -rf ~/.exports
-ln -s -v ~/Projects/dotfiles/.exports ~/.exports
+ln -s -v ~/Projects/dotfiles/configs/.exports ~/.exports
 
 rm -rf ~/.functions
-ln -s -v ~/Projects/dotfiles/.functions ~/.functions
+ln -s -v ~/Projects/dotfiles/configs/.functions ~/.functions
 
 rm -rf ~/.git
-ln -s -v ~/Projects/dotfiles/.git/ ~/.git
+ln -s -v ~/Projects/dotfiles/configs/.git/ ~/.git
 
 rm -rf ~/.gitconfig
-ln -s -v ~/Projects/dotfiles/.gitconfig ~/.gitconfig
+ln -s -v ~/Projects/dotfiles/configs/.gitconfig ~/.gitconfig
 
 rm -rf ~/.gitignore
-ln -s -v ~/Projects/dotfiles/.gitignore ~/.gitignore
+ln -s -v ~/Projects/dotfiles/configs/.gitignore ~/.gitignore
 
 rm -rf ~/.hyper.js
-ln -s -v ~/Projects/dotfiles/.hyper.js ~/.hyper.js
+ln -s -v ~/Projects/dotfiles/configs/.hyper.js ~/.hyper.js
 
 rm -rf ~/.inputrc
-ln -s -v ~/Projects/dotfiles/.inputrc ~/.inputrc
+ln -s -v ~/Projects/dotfiles/configs/.inputrc ~/.inputrc
 
 rm -rf ~/.macos
-ln -s -v ~/Projects/dotfiles/.macos ~/.macos
+ln -s -v ~/Projects/dotfiles/configs/.macos ~/.macos
 
 rm -rf ~/.osx
-ln -s -v ~/Projects/dotfiles/.osx ~/.osx
+ln -s -v ~/Projects/dotfiles/configs/.osx ~/.osx
 
 rm -rf ~/.zshrc
-ln -s -v ~/Projects/dotfiles/.zshrc ~/.zshrc
+ln -s -v ~/Projects/dotfiles/configs/.zshrc ~/.zshrc
 
 echo "Create symlinks: done"
 
