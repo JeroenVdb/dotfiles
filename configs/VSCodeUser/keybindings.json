@@ -12,5 +12,9 @@
 	{
 		"key": "ctrl+shift+g",
 		"command": "-workbench.view.scm"
+	},
+	{
+		"key": "shift+cmd+`",
+		"command": "workbench.action.terminal.focus"
 	}
 ]

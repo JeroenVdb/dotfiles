@@ -1,0 +1,60 @@
+!SESSION 2018-04-26 13:16:08.013 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_162
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/jvandenberghe/Library/Application Support/Code/User/workspaceStorage/b1560240c6ca4c98a0c952fae43c63a5/redhat.java/jdt_ws
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:09.025
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:09.189
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:09.211
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:09.212
+!MESSAGE Initializing Java Language Server 0.17.0.201804162241
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:10.269
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.core.net 1 0 2018-04-26 13:16:10.283
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:10.327
+!MESSAGE Creating the default Java project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:11.065
+!MESSAGE Finished creating the default Java project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:11.307
+!MESSAGE Importing Maven project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:20.173
+!MESSAGE Workspace initialized in 9922ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:20.568
+!MESSAGE >> java/buildWorkspace (full)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:20.573
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:20.574
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:20.578
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:16:20.580
+!MESSAGE >>New configuration: {java={home=null, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={updateBuildConfiguration=interactive, maven={userSettings=null}}, trace={server=off}, import={gradle={enabled=true}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true}, saveActions={organizeImports=false}, contentProvider={preferred=null}, autobuild={enabled=true}, completion={overwrite=true, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, debug={logLevel=warn, settings={showHex=false, showStaticVariables=true, showQualifiedNames=false, maxStringLength=0.0, enableHotCodeReplace=true}}, test={report={position=sideView}}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:17:03.110
+!MESSAGE Shutdown received... waking up main thread
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2018-04-26 13:17:03.115
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is stopping:
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-04-26 13:17:03.696
+!MESSAGE The workspace will exit with unsaved changes in this session.

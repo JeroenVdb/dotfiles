@@ -153,3 +153,7 @@ alias reload="exec ${SHELL} -l"
 alias path='echo -e ${PATH//:/\\n}'
 
 alias hist='history'
+
+# Onelogin: https://github.com/physera/onelogin-aws-cli
+# See .exports for envs
+alias onelogin='onelogin-aws-login --profile onelogin -C default -d 28800'

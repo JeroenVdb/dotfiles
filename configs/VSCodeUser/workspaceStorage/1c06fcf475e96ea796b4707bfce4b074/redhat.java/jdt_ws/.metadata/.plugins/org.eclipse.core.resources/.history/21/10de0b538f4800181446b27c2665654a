@@ -1,0 +1,98 @@
+package net.persgroep.app.gigyaoidc.registration.onlineprofile;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import feign.Response;
+import net.persgroep.app.gigyaoidc.registration.onlineprofile.exception.InvalidPasswordException;
+import net.persgroep.app.gigyaoidc.registration.onlineprofile.exception.UncategorizedOnlineProfileServiceException;
+import net.persgroep.app.gigyaoidc.registration.onlineprofile.exception.UniqueIdentifierExistsException;
+import net.persgroep.app.gigyaoidc.registration.onlineprofile.response.RegisterAccountErrorResponse;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
+
+import java.io.InputStream;
+
+import static com.google.common.collect.Maps.newHashMap;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.when;
+
+@RunWith(MockitoJUnitRunner.class)
+public class OnlineProfileErrorDecoderTest {
+
+    private static final String METHOD = "method";
+    private static final String ERROR_OPS_003 = "OPS-003";
+    private static final String ERROR_OPS_003_DESCRIPTION = "OPS-003 description";
+    private static final String ERROR_OPS_007 = "OPS-007";
+    private static final String ERROR_OPS_007_DESCRIPTION = "OPS-007 description";
+    private static final String ERROR_OPS_OTHER = "OPS-other";
+    private static final String ERROR_OPS_OTHER_DESCRIPTION = "OPS-other description";
+    private static final String ERROR_OPS_999 = "OPS-999";
+    private static final String ERROR_OPS_999_DESCRIPTION = "An unexpected exception occurred with status 404";
+
+    @InjectMocks
+    private OnlineProfileErrorDecoder onlineProfileErrorDecoder;
+
+    @Mock
+    private ObjectMapper objectMapper;
+    @Mock
+    private RegisterAccountErrorResponse registerAccountErrorResponse;
+    @Mock
+    private Response.Body responseBody;
+    @Mock
+    private InputStream responseBodyInputStream;
+
+    private Response response;
+
+
+    @Test
+    public void decode_uniqueIdentifierExists_UniqueIdentifierExistsException() throws Exception {
+        response = Response.create(200, "", newHashMap(), responseBody);
+        when(responseBody.asInputStream()).thenReturn(responseBodyInputStream);
+        when(objectMapper.readValue(responseBodyInputStream, RegisterAccountErrorResponse.class)).thenReturn(registerAccountErrorResponse);
+        when(registerAccountErrorResponse.getCode()).thenReturn(ERROR_OPS_003);
+        when(registerAccountErrorResponse.getDescription()).thenReturn(ERROR_OPS_003_DESCRIPTION);
+
+        assertThat(onlineProfileErrorDecoder.decode(METHOD, response))
+                .isInstanceOf(UniqueIdentifierExistsException.class)
+                .isEqualToComparingFieldByField(new UniqueIdentifierExistsException(ERROR_OPS_003_DESCRIPTION));
+    }
+
+    @Test
+    public void decode_invalidPassword_InvalidPasswordException() throws Exception {
+        response = Response.create(200, "", newHashMap(), responseBody);
+        when(responseBody.asInputStream()).thenReturn(responseBodyInputStream);
+        when(objectMapper.readValue(responseBodyInputStream, RegisterAccountErrorResponse.class)).thenReturn(registerAccountErrorResponse);
+        when(registerAccountErrorResponse.getCode()).thenReturn(ERROR_OPS_007);
+        when(registerAccountErrorResponse.getDescription()).thenReturn(ERROR_OPS_007_DESCRIPTION);
+
+        assertThat(onlineProfileErrorDecoder.decode(METHOD, response))
+                .isInstanceOf(InvalidPasswordException.class)
+                .isEqualToComparingOnlyGivenFields(new InvalidPasswordException(ERROR_OPS_007_DESCRIPTION), "detailMessage");
+    }
+
+    @Test
+    public void decode_otherErrorCode_UncategorizedOnlineProfileServiceException() throws Exception {
+        response = Response.create(200, "", newHashMap(), responseBody);
+        when(responseBody.asInputStream()).thenReturn(responseBodyInputStream);
+        when(objectMapper.readValue(responseBodyInputStream, RegisterAccountErrorResponse.class)).thenReturn(registerAccountErrorResponse);
+        when(registerAccountErrorResponse.getCode()).thenReturn(ERROR_OPS_OTHER);
+        when(registerAccountErrorResponse.getDescription()).thenReturn(ERROR_OPS_OTHER_DESCRIPTION);
+
+        assertThat(onlineProfileErrorDecoder.decode(METHOD, response))
+                .isInstanceOf(UncategorizedOnlineProfileServiceException.class)
+                .isEqualToComparingOnlyGivenFields(new UncategorizedOnlineProfileServiceException(ERROR_OPS_OTHER, ERROR_OPS_OTHER_DESCRIPTION),
+                        "detailMessage");
+    }
+
+    @Test
+    public void decode_reponseBodyIsNull_UncategorizedOnlineProfileServiceException() {
+        response = Response.create(404, "", newHashMap(), (Response.Body)null);
+
+        assertThat(onlineProfileErrorDecoder.decode(METHOD, response))
+                .isInstanceOf(UncategorizedOnlineProfileServiceException.class)
+                .isEqualToComparingOnlyGivenFields(new UncategorizedOnlineProfileServiceException(ERROR_OPS_999, ERROR_OPS_999_DESCRIPTION),
+                        "detailMessage");
+    }
+}

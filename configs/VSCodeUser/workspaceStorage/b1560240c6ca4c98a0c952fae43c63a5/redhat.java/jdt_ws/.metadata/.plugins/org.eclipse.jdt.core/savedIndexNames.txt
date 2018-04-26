@@ -1,0 +1,23 @@
+INDEX VERSION 1.131+/Users/jvandenberghe/Projects/dotfiles/configs/VSCodeUser/workspaceStorage/b1560240c6ca4c98a0c952fae43c63a5/redhat.java/jdt_ws/.metadata/.plugins/org.eclipse.jdt.core
+3327725315.index
+3950555928.index
+797065032.index
+1398567450.index
+2353592375.index
+2082999600.index
+1271342938.index
+996717109.index
+4101033093.index
+280581843.index
+2388264203.index
+1881805215.index
+285621048.index
+3760224784.index
+3053644432.index
+3878882986.index
+2920452661.index
+2197300099.index
+3842426239.index
+4263892753.index
+3384895653.index
+2804533573.index

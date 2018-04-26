@@ -37,7 +37,7 @@ export GPG_TTY=$(tty);
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Onelogin: https://github.com/physera/onelogin-aws-cli
+# See .alias for the alias
 export AWS_PROFILE=onelogin
 export AWS_DEFAULT_REGION=eu-west-1
 export ONELOGIN_AWS_CLI_USERNAME=jeroen.van.den.berghe@persgroep.net
-alias onelogin='onelogin-aws-login --profile onelogin -C default -d 28800'

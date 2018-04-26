@@ -1,0 +1,61 @@
+package net.persgroep.app.gigyaoidc.web.view;
+
+import net.persgroep.app.gigyaoidc.exceptions.UnknownClientIdException;
+import net.persgroep.app.gigyaoidc.repository.RelyingPartyRepository;
+import net.persgroep.app.gigyaoidc.service.OidcClientId;
+import net.persgroep.app.gigyaoidc.web.model.RelyingParty;
+import net.persgroep.app.gigyaoidc.web.support.WebUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.View;
+import org.thymeleaf.spring4.SpringTemplateEngine;
+import org.thymeleaf.spring4.view.ThymeleafViewResolver;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Locale;
+import java.util.Optional;
+
+import static java.util.Optional.empty;
+import static java.util.Optional.of;
+import static org.apache.commons.lang3.StringUtils.isNotBlank;
+
+@Component("thymeleafViewResolver")
+public class CustomThymeleafViewResolver extends ThymeleafViewResolver {
+
+    private final static Logger LOG = LoggerFactory.getLogger(CustomThymeleafViewResolver.class);
+
+    private final WebUtil webUtil;
+    private final RelyingPartyRepository relyingPartyRepository;
+    private final OidcClientId oidcClientId;
+
+    @Autowired
+    public CustomThymeleafViewResolver(final WebUtil webUtil, final RelyingPartyRepository relyingPartyRepository,
+                                       final OidcClientId oidcClientId, final SpringTemplateEngine templateEngine) {
+        this.webUtil = webUtil;
+        this.relyingPartyRepository = relyingPartyRepository;
+        this.oidcClientId = oidcClientId;
+        this.setTemplateEngine(templateEngine);
+        this.setCharacterEncoding(StandardCharsets.UTF_8.name());
+    }
+
+    @Override
+    public View resolveViewName(final String logicalViewName, final Locale locale) throws Exception {
+        String clientId = oidcClientId.getClientId();
+        String actualViewName = logicalViewName;
+        if (isNotBlank(clientId)) {
+            actualViewName = webUtil.determineView(tryFindRelyingParty(clientId), logicalViewName);
+        }
+        LOG.debug("Resolved view from logical viewName '{}' to actual viewName '{}'", logicalViewName, actualViewName);
+        return super.resolveViewName(actualViewName, locale);
+    }
+
+    private Optional<RelyingParty.Summary> tryFindRelyingParty(final String clientId) {
+        try {
+            return of(relyingPartyRepository.findRelyingParty(clientId)).map(RelyingParty::getSummary);
+        } catch (UnknownClientIdException e) {
+            return empty();
+        }
+    }
+}
