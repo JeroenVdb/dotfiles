@@ -1,8 +1,0 @@
-package net.persgroep.app.gigyaoidc.registration.onlineprofile.exception;
-
-public class ValidationException extends RuntimeException {
-
-    public ValidationException(final String message) {
-        super(message);
-    }
-}
