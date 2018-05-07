@@ -9,9 +9,10 @@
     "editor.renderWhitespace": "all",
     "window.zoomLevel": 0,
     "workbench.colorCustomizations": {
-        "contrastBorder": "#181a1f"
+        // "contrastBorder": "#181a1f" // One Dark Pro
+        "contrastBorder": "#6c6c6c" // One Dark Pro Light
     },
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Visual Studio Light",
     "diffEditor.ignoreTrimWhitespace": true,
     "git.path": "/usr/bin/git",
     "workbench.startupEditor": "newUntitledFile",
@@ -21,5 +22,7 @@
         ".stylelintrc": "yaml"
     },
     "extensions.ignoreRecommendations": false,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "prettier.stylelintIntegration": true,
+    "editor.formatOnSave": true // for prettier
 }
