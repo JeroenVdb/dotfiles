@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="vscode-svgviewer" Version="1.4.3" Publisher="cssho"/>
+    <Identity Language="en-US" Id="vscode-svgviewer" Version="1.4.4" Publisher="cssho"/>
     <DisplayName>SVG Viewer</DisplayName>
     <Description xml:space="preserve">SVG Viewer for Visual Studio Code.</Description>
     <Tags>svg,viewer,image,keybindings,xml</Tags>
@@ -9,7 +9,7 @@
     <GalleryFlags>Public</GalleryFlags>
     <Badges></Badges>
     <Properties>
-      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.9.0" />
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.12.0" />
       <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
       
         <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/cssho/vscode-svgviewer.git" />
