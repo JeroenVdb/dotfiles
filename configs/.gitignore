@@ -27,11 +27,12 @@ Gmail-darwin-x64
 Google Calendar-darwin-x64
 
 # VS Code
+.vscode
 .config
 .settings
 .classpath
 .project
-bin/*
+bin
 
 
 workspaceStorage/*

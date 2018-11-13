@@ -28,3 +28,8 @@ source ~/.bash_profile
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+# For using alt+KeyLeft and alt+KeyRight in the embedded Terminal in IntelliJ
+# https://youtrack.jetbrains.com/issue/IDEA-153536
+bindkey "\e\eOD" backward-word
+bindkey "\e\eOC" forward-word

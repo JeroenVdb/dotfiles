@@ -38,6 +38,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Onelogin: https://github.com/physera/onelogin-aws-cli
 # See .alias for the alias
-export AWS_PROFILE=onelogin
+export AWS_PROFILE=701230046688/DP-1L-Admin/jeroen.van.den.berghe@persgroep.be #use onelogin Mata Hari profile as the default one for AWS
 export AWS_DEFAULT_REGION=eu-west-1
 export ONELOGIN_AWS_CLI_USERNAME=jeroen.van.den.berghe@persgroep.net

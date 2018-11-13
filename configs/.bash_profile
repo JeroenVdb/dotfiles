@@ -6,6 +6,8 @@ for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
 done
 unset file
 
+export PATH=/Users/jvandenberghe/Library/Python/2.7/bin:$PATH
+
 if [[ -n "$ZSH_VERSION" ]]; then  # quit now if in zsh
     return 0 2> /dev/null || exit 0;
 fi;

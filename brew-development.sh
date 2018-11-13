@@ -29,3 +29,5 @@ brew upgrade python
 # official documentation says: `pip install awscli --upgrade --user`
 # but also possible via brew
 brew install awscli
+
+brew install jq

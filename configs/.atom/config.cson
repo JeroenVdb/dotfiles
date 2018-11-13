@@ -19,16 +19,21 @@
     softWrap: true
     tabLength: 4
     tabType: "hard"
+  elmjutsu:
+    alwaysCompileMain: true
   emmet: {}
   "exception-reporting":
     userId: "d16b539d-1513-572b-3c46-220fcd070c60"
+  "language-elm":
+    autocompleteEnabled: false
   linter:
     lintOnChange: false
   "linter-eslint":
     disableWhenNoEslintrcFileInPath: true
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview":
     breakOnSingleNewline: true
   minimap:

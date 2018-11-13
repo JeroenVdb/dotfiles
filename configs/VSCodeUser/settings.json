@@ -23,6 +23,15 @@
     },
     "extensions.ignoreRecommendations": false,
     "files.trimTrailingWhitespace": true,
-    "prettier.stylelintIntegration": true,
-    "editor.formatOnSave": false // for prettier
+    "prettier.stylelintIntegration": false,
+    "prettier.eslintIntegration": false,
+    "editor.formatOnSave": false,
+    "git.enableSmartCommit": true,
+    "[html]": {
+        "editor.formatOnSave": false
+    },
+    "editor.minimap.enabled": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.run": "onSave",
+    "explorer.confirmDragAndDrop": false
 }

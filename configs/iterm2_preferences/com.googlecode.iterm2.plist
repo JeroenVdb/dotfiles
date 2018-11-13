@@ -70,7 +70,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>488 151 796 473 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>211 207 1505 850 0 0 1920 1057 </string>
+	<string>327 159 1505 850 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>247 107 1505 850 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
@@ -672,7 +672,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>58739735-E8F4-45D8-8565-41F23E3E8DBD</string>
 	<key>NoSyncLastTipTime</key>
-	<real>547113798.94481206</real>
+	<real>557575948.54723895</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -724,6 +724,38 @@
 		<string>0037</string>
 		<string>0038</string>
 		<string>0039</string>
+		<string>0040</string>
+		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
+		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
+		<string>0048</string>
+		<string>0049</string>
+		<string>0050</string>
+		<string>0051</string>
+		<string>0052</string>
+		<string>0053</string>
+		<string>0054</string>
+		<string>0055</string>
+		<string>0056</string>
+		<string>0057</string>
+		<string>0058</string>
+		<string>0059</string>
+		<string>0060</string>
+		<string>0061</string>
+		<string>0062</string>
+		<string>0063</string>
+		<string>0064</string>
+		<string>0065</string>
+		<string>0066</string>
+		<string>0067</string>
+		<string>0068</string>
+		<string>0069</string>
+		<string>0070</string>
+		<string>0071</string>
 	</array>
 	<key>PasteSpecialChunkDelay</key>
 	<real>0.01</real>
@@ -779,7 +811,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-04T08:06:09Z</date>
+	<date>2018-09-05T08:51:36Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -788,6 +820,8 @@
 	<true/>
 	<key>StretchTabsToFillBar</key>
 	<true/>
+	<key>TabTransform</key>
+	<integer>0</integer>
 	<key>TimeBetweenTips</key>
 	<real>86400</real>
 	<key>ToolbeltTools</key>
@@ -1520,6 +1554,6 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.0</string>
 </dict>
 </plist>
