@@ -156,4 +156,4 @@ alias hist='history'
 
 # Onelogin: https://github.com/physera/onelogin-aws-cli
 # See .exports for envs
-alias onelogin='onelogin-aws-login --profile onelogin -C default -d 28800'
+alias onelogin='onelogin-aws-login -C default -d 28800'
