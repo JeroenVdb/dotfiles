@@ -33,3 +33,7 @@ source ~/.bash_profile
 # https://youtrack.jetbrains.com/issue/IDEA-153536
 bindkey "\e\eOD" backward-word
 bindkey "\e\eOC" forward-word
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/jvandenberghe/Projects/temptation-module/module/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/jvandenberghe/Projects/temptation-module/module/node_modules/tabtab/.completions/slss.zsh
