@@ -97,14 +97,13 @@ Source: http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-r
 
 # Other specific setup documentation
 
-- [Web Desktop Applications with nativefier](nativefier/nativefier.md): run web applications in electron shells so they act as standalone desktop applications
 - [Mediacenter setup](mediacenter.md)
 
 # Backup
 
-- Have you updated any files in your $HOME folder? Copy them back to the git dotfiles repo and commit & push
 - Update the `brew-*.sh` files: remove and add packages to keep this up-to-date. You can use `brew list` and `brew cask list`
-- Backup Postman collections and environment
+- `.secrets` to 1Password
+- Backup Insomnia workspaces to 1Password
 
 # Thanks to
 
