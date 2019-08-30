@@ -16,9 +16,6 @@ echo "Create symlinks: start"
 rm -rf ~/.aliases
 ln -s -v ~/Projects/dotfiles/configs/.aliases ~/.aliases
 
-rm -rf ~/.atom
-ln -s -v ~/Projects/dotfiles/configs/.atom/ ~/.atom
-
 rm -rf ~/.vscode
 ln -s -v ~/Projects/dotfiles/configs/.vscode/ ~/.vscode
 

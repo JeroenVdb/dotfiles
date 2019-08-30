@@ -78,10 +78,6 @@ When setting up a new Mac, you may want to set some sensible macOS defaults.
 ~/.macos
 ```
 
-## Editor/IDE: Atom
-
-Install `package-sync` (`apm install package-sync`) and use the `Package Sync: Sync` command from the Command Palette to download all packages.
-
 ## Terminal: iTerm2
 
 Install iTerm 2 and run the following commands to use the perferences included in this repository.
@@ -106,7 +102,6 @@ Source: http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-r
 
 # Backup
 
-- Atom: make sure to have the latest package.cson `Package Sync: Create package list`
 - Have you updated any files in your $HOME folder? Copy them back to the git dotfiles repo and commit & push
 - Update the `brew-*.sh` files: remove and add packages to keep this up-to-date. You can use `brew list` and `brew cask list`
 - Backup Postman collections and environment
