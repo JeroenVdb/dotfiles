@@ -28,15 +28,6 @@ Some automated scripts and documentation
 - `brew-development.sh` installs development related applications (check if you need it all)
 - `brew-software.sh` installs general applications (check if you need it all)
 
-## First steps
-
-1. Download and install 1Password: https://1password.com/downloads/mac/
-1. Download and install Dropbox for aditional Vaults
-1. Download and install Google Chrome: https://www.google.com/chrome/
-1. dotfiles
-1. restore id_rsa, .secrets (1Password)
-1. Install IntelliJ Toolbox app: https://www.jetbrains.com/toolbox/app/?fromMenu
-
 ## dotfiles
 
 ```bash
@@ -104,9 +95,18 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 Source: http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/
 
-# Other specific setup documentation
+## Other specific setup documentation
 
 - [Mediacenter setup](mediacenter.md)
+
+# Restore
+
+1. Download and install 1Password: https://1password.com/downloads/mac/
+1. Download and install Dropbox for aditional 1Password Vaults
+1. Download and install Google Chrome: https://www.google.com/chrome/
+1. dotfiles
+1. restore id_rsa, .secrets (1Password)
+1. Install IntelliJ Toolbox app: https://www.jetbrains.com/toolbox/app/?fromMenu
 
 # Backup
 
