@@ -28,6 +28,15 @@ Some automated scripts and documentation
 - `brew-development.sh` installs development related applications (check if you need it all)
 - `brew-software.sh` installs general applications (check if you need it all)
 
+## First steps
+
+1. Download and install 1Password: https://1password.com/downloads/mac/
+1. Download and install Dropbox for aditional Vaults
+1. Download and install Google Chrome: https://www.google.com/chrome/
+1. dotfiles
+1. restore id_rsa, .secrets (1Password)
+1. Install IntelliJ Toolbox app: https://www.jetbrains.com/toolbox/app/?fromMenu
+
 ## dotfiles
 
 ```bash
