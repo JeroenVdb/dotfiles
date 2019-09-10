@@ -16,12 +16,6 @@ echo "Create symlinks: start"
 rm -rf ~/.aliases
 ln -s -v ~/Projects/dotfiles/configs/.aliases ~/.aliases
 
-rm -rf ~/.vscode
-ln -s -v ~/Projects/dotfiles/configs/.vscode/ ~/.vscode
-
-rm -rf ~/Library/Application\ Support/Code/User
-ln -s -v ~/Projects/dotfiles/configs/VSCodeUser ~/Library/Application\ Support/Code/User
-
 rm -rf ~/.bash_profile
 ln -s -v ~/Projects/dotfiles/configs/.bash_profile ~/.bash_profile
 
