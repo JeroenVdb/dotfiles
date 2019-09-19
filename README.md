@@ -95,6 +95,10 @@ defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
 Source: http://stratus3d.com/blog/2015/02/28/sync-iterm2-profile-with-dotfiles-repository/
 
+## Sportlight: Restart/Sleep/Logout/Shutdown/Lock
+
+Install https://github.com/siong1987/shortcuts
+
 ## Other specific setup documentation
 
 - [Mediacenter setup](mediacenter.md)
